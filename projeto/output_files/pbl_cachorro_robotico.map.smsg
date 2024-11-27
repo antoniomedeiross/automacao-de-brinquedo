@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at dividir_clk_8s.v(8): always construct contains both blocking and non-blocking assignments File: C:/Users/Antonio/OneDrive/Documentos/universidade/PBL/hardware/CD/pbl-2-cachorro/codigos/dividir_clk_8s.v Line: 8
+Warning (10268): Verilog HDL information at dividir_clk_4s.v(8): always construct contains both blocking and non-blocking assignments File: C:/Users/Antonio/OneDrive/Documentos/universidade/PBL/hardware/CD/pbl-2-cachorro/codigos/dividir_clk_4s.v Line: 8

@@ -1,0 +1,11 @@
+module mux2_1(sel, in_a, in_b, out);
+	input sel, in_a, in_b;
+	output out;
+	
+	wire fio_a1, fio_a2, fio_n;
+	not not1(fio_n, sel);
+	and and1(fio_a1, fio_n, in_a);
+	and and2(fio_a2, sel, in_b);
+	or or1(out, fio_a1, fio_a2);
+	
+endmodule

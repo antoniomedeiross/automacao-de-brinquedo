@@ -1,0 +1,53 @@
+//REFAZER CONTANDO DE 000 ATÉ 101
+module sete_seguimentos(x, y, z, display);
+	input x, y, z;
+	output reg [6:0]display;
+	
+	//Fio negações
+	wire nx, ny, nz;
+	wire or_a, and_a1, and_a2; //Fios do display[0]
+	wire or_b; //Fios do display[1]
+	wire or_c; //Fios do display[2]
+	wire or_d, and_d, and_d1; //Fios do display[3]
+	//Fios do display[4]
+	wire and_f; //Fios do display[5]
+	wire and_g, and_g1; //Fios do display[6]
+	
+
+	// Portas Negadas
+	not not0(nx, x);
+	not not1(ny, y);
+	not not2(nz, z);
+	
+	// Saída do display[0] -> a = x(z'+y) + z'y'z	
+	or or_a(or_a, nz, y);
+	and and_a(and_a1, x, or_a);
+	and and_a1(and_a2, nz, ny, z);
+	or or_a1(display[0], and_a2, and_a1);
+
+	// Saída do display[1] -> b = x(z+y)	
+	or orb(or_b, z, y);
+	and andb(display[1], or_b, x);
+
+	// Saída do display[2] -> c = y(x+z')
+	or orc(or_c, x, nz);
+	and andc(display[2], or_c, y);
+
+	// Saída do display[3] -> d = x(y+z') + x'y'z
+	or ord(or_d, y, nz);
+	and andd(and_d, nx, ny, z);
+	or ord1(display[3], or_d, and_d);
+
+	// Saída do display[4] -> e = x+z
+	or ore(display[4], x, z);
+
+	// Saída do display[5] -> f = x'z + y	
+	and andf(and_f, nx, z);
+	or andf(display[5], y, and_f);
+
+	// Saída do display[6] -> g = x'y' + xy
+	and andg(and_g, nx, ny);
+	and andg1(and_g1, x, y);
+	or org(display[6], and_g, and_g1);
+ 
+endmodule

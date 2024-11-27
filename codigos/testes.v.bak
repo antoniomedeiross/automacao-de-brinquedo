@@ -1,0 +1,24 @@
+module testes(input clk, output clk5, clk10, clk10_2);
+
+	wire fioclk5, fioclk10;
+	
+	
+	dividir_clk5 div1(
+		.clk(clk),
+		.clk_5(fioclk5)
+	);
+	
+	dividir_clk5 div2(
+		.clk(fioclk5),
+		.clk_5(fioclk10)
+	);
+	flipflop_t ff (
+		.clk(fioclk10),
+		.reset(0),
+		.preset(0),
+		.q(clk10_2)
+	);
+
+
+
+endmodule

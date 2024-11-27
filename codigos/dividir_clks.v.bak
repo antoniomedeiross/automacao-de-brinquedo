@@ -1,0 +1,122 @@
+////////////PRONTO////////////
+
+module dividir_clk_8s(clk, clk_2s, clk_4s, clk_8s, clk_display);
+  input clk;
+  output clk_display, clk_2s, clk_4s, clk_8s;
+
+  wire div1, div2, div3, div4, div5, div6, div7, div8; //Fios que recebem as divizões do clk por 5
+  wire ff1, ff2, ff3, ff4, ff5, ff6, ff7; // Fios da divisão por 2 dos flipflops
+/*  ////DIVISÃO/////
+    1 d/5 -> clk = 10Mhz
+    2 d/5 -> clk = 2MHz 
+    3 d/5 -> clk = 400KHz
+    4 d/5 -> clk = 80KHz
+    5 d/5 -> clk = 16KHz
+    6 d/5 -> clk = 3.2KHz
+    7 d/5 -> clk = 640Hz
+    8 d/5 -> clk = 128Hz
+    9 d/2 -> clk = 64Hz -> clk_display
+    10 d/2 -> clk = 32Hz
+    11 d/2 -> clk = 16Hz
+    12 d/2 -> clk = 8Hz
+    13 d/2 -> clk = 4Hz
+    14 d/2 -> clk = 2Hz
+    15 d/2 -> clk = 1Hz
+    16 d/2 -> clk = 0.5Hz   // 2s
+    17 d/2 -> clk = 0.25Hz  // 4s
+    18 d/2 -> clk = 0.125Hz // 8s
+  */
+  dividir_clk5 divisor5_1( // O modulo divide o clock por 5
+    .clk(clk), // Entrada de 50MHz
+    .clk_5(div1) // saida de 10MHz
+  );
+
+  dividir_clk5 divisor5_2( // O modulo divide o clock por 5
+    .clk(div1), // Entrada de 10MHz
+    .clk_5(div2) // Saida de 2MHz
+  );
+
+  dividir_clk5 divisor5_3( // O modulo divide o clock por 5
+    .clk(div2), // Entrada de 2MHz
+    .clk_5(div3) // Saida de 400KHz
+  );
+
+  dividir_clk5 divisor5_4( // O modulo divide o clock por 5
+    .clk(div3), // Entrada de 400KHz
+    .clk_5(div4) // Saida de 80KHz
+  );
+
+  dividir_clk5 divisor5_5( // O modulo divide o clock por 5
+    .clk(div4), // Entrada de 80KHz
+    .clk_5(div5) // Saida de 16KHz
+  );
+
+  dividir_clk5 divisor5_6( // O modulo divide o clock por 5
+    .clk(div5), // Entrada de 16KHz
+    .clk_5(div6) // Saida de 3.2KHz
+  );
+
+  dividir_clk5 divisor5_7( // O modulo divide o clock por 5
+    .clk(div6), // Entrada de 3.2KHz
+    .clk_5(div7) // Saida de 640Hz
+  );
+
+  dividir_clk5 divisor5_8( // O modulo divide o clock por 5
+    .clk(div7), // Entrada de 640KHz
+    .clk_5(div8) // Saida de 128Hz
+  );
+  //Apos passar pelos divisores de 5, o clock agora é de 128Hz, então conseguimos dividi-lo precisamente para 2s usando flip-flops tipo T
+
+
+  flipflop_t ff_1( // A saida do 1° ff é 64
+    .clk(div8),
+    .q(ff1)
+  );
+
+  assign clk_display = ff1; // O clock do display recebe o fio do ff1 que é de 65Hz
+
+  flipflop_t ff_2( // A saida do 2° ff é 32
+    .clk(ff1),
+    .q(ff2)
+  );
+  flipflop_t ff_3( // A saida do 3° ff é 16
+    .clk(ff2),
+    .q(ff3)
+  );
+  flipflop_t ff_4( // A saida do 4° ff é 8
+    .clk(ff3),
+    .q(ff4)
+  );
+  flipflop_t ff_5( // A saida do 5° ff é 4
+    .clk(ff4),
+    .q(ff5)
+  );
+  flipflop_t ff_6( // A saida do 6° ff é 2
+    .clk(ff5),
+    .q(ff6)
+  );
+  flipflop_t ff_7( // A saida do 7° ff é 1
+    .clk(ff6),
+    .q(ff7)
+  );
+  flipflop_t ff_8( // A saida do 8° ff é 0.5
+    .clk(ff7),
+    .q(ff8)
+  );
+
+  assign clk_2s = ff8; // O clk_2s recebe o fio do ff8 que é de 0.5Hz
+
+  flipflop_t ff_9( // A saida do 9° ff é 0.25
+    .clk(ff8),
+    .q(ff9)
+  );
+
+  assign clk_4s = ff9;  // O clk_4s recebe o fio do ff9 que é de 0.25Hz
+
+  flipflop_t ff_10( // A saida do 10° ff é 0.125
+    .clk(ff9),
+    .q(clk_8s)
+  );
+
+
+endmodule

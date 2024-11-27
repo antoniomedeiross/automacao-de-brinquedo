@@ -1,0 +1,107 @@
+//--------------------PRONTO----------------------------//
+module clock_display(clk, clk_display);
+  input clk ; // Recebe o clk, como entrada
+  output clk_display; // Clock de saida que será de aproximadamente 95.4Hz
+
+  //Fios de conexão entre os FF
+  wire qff1, qff2, qff3, qff4, qff5, qff6, qff7, qff8, qff9, qff10, qff11, qff12, qff13, qff14, qff15, qff16, qff17, qff18;
+  //Serão necessários 19FF para dividir 50MHz em 95Hz
+
+  // As saidas de cada flipflop serão as entradas do seginte, assim dividindo a frequência em 2 a cada ff que ele passe
+  flipflop_t ff1( 
+    .clk(clk),
+    .q(qff1)
+  );
+
+  flipflop_t ff2(
+    .clk(qff1),
+    .q(qff2)
+  );
+
+  flipflop_t ff3(
+    .clk(qff2),
+    .q(qff3)
+  );
+
+  flipflop_t ff4(
+    .clk(qff3),
+    .q(qff4)
+  );
+
+  flipflop_t ff5(
+    .clk(qff4),
+    .q(qff5)
+  );
+
+  flipflop_t ff6(
+    .clk(qff5),
+    .q(qff6)
+  );
+
+  flipflop_t ff7(
+    .clk(qff6),
+    .q(qff7)
+  );
+
+  flipflop_t ff8(
+    .clk(qff7),
+    .q(qff8)
+  );
+
+  flipflop_t ff9(
+    .clk(qff8),
+    .q(qff9)
+  );
+
+  flipflop_t ff10(
+    .clk(qff9),
+    .q(qff10)
+  );
+
+  flipflop_t ff11(
+    .clk(qff10),
+    .q(qff11)
+  );
+
+  flipflop_t ff12(
+    .clk(qff11),
+    .q(qff12)
+  );
+
+  flipflop_t ff13(
+    .clk(qff12),
+    .q(qff13)
+  );
+
+  flipflop_t ff14(
+    .clk(qff13),
+    .q(qff14)
+  );
+
+  flipflop_t ff15(
+    .clk(qff14),
+    .q(qff15)
+  );
+
+  flipflop_t ff16(
+    .clk(qff15),
+    .q(qff16)
+  );
+
+  flipflop_t ff17(
+    .clk(qff16),
+    .q(qff17)
+  );
+
+  flipflop_t ff18(
+    .clk(qff17),
+    .q(qff18)
+  );
+
+  flipflop_t ff19(
+    .clk(qff18),
+    .q(clk_display)
+  );
+  
+  
+endmodule

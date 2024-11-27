@@ -1,0 +1,529 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'dividir_clks:dividir_clks|dividir_clk5:divisor5_6|flipflop_t:ff1|q'
+Slack : -1.453
+TNS   : -1.453
+
+Type  : Setup 'dividir_clks:dividir_clks|dividir_clk5:divisor5_4|flipflop_t:ff1|q'
+Slack : -1.452
+TNS   : -1.452
+
+Type  : Setup 'contador_3bits:contador3bits|flipflop_t:ff2|q'
+Slack : -1.249
+TNS   : -1.249
+
+Type  : Setup 'dividir_clks:dividir_clks|flipflop_t:ff_9|q'
+Slack : -1.246
+TNS   : -1.246
+
+Type  : Setup 'dividir_clks:dividir_clks|dividir_clk5:divisor5_2|flipflop_t:ff1|q'
+Slack : -1.214
+TNS   : -1.214
+
+Type  : Setup 'dividir_clks:dividir_clks|dividir_clk5:divisor5_3|flipflop_t:ff1|q'
+Slack : -1.212
+TNS   : -1.212
+
+Type  : Setup 'dividir_clks:dividir_clks|dividir_clk5:divisor5_7|flipflop_t:ff1|q'
+Slack : -1.211
+TNS   : -1.211
+
+Type  : Setup 'dividir_clks:dividir_clks|dividir_clk5:divisor5_1|flipflop_t:ff1|q'
+Slack : -1.194
+TNS   : -1.194
+
+Type  : Setup 'dividir_clks:dividir_clks|dividir_clk5:divisor5_5|flipflop_t:ff1|q'
+Slack : -1.194
+TNS   : -1.194
+
+Type  : Setup 'dividir_clks:dividir_clks|dividir_clk5:divisor5_8|flipflop_t:ff1|q'
+Slack : -1.194
+TNS   : -1.194
+
+Type  : Setup 'dividir_clks:dividir_clks|dividir_clk5:divisor5_8|flipflop_t:ff0|q'
+Slack : 0.447
+TNS   : 0.000
+
+Type  : Setup 'dividir_clks:dividir_clks|dividir_clk5:divisor5_6|flipflop_t:ff0|q'
+Slack : 0.448
+TNS   : 0.000
+
+Type  : Setup 'dividir_clks:dividir_clks|flipflop_t:ff_4|q'
+Slack : 0.457
+TNS   : 0.000
+
+Type  : Setup 'dividir_clks:dividir_clks|dividir_clk5:divisor5_5|flipflop_t:ff0|q'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Setup 'dividir_clks:dividir_clks|flipflop_t:ff_7|q'
+Slack : 0.469
+TNS   : 0.000
+
+Type  : Setup 'dividir_clks:dividir_clks|flipflop_t:ff_1|q'
+Slack : 0.483
+TNS   : 0.000
+
+Type  : Setup 'dividir_clks:dividir_clks|flipflop_t:ff_6|q'
+Slack : 0.550
+TNS   : 0.000
+
+Type  : Setup 'dividir_clks:dividir_clks|dividir_clk5:divisor5_4|flipflop_t:ff0|q'
+Slack : 0.576
+TNS   : 0.000
+
+Type  : Setup 'dividir_clks:dividir_clks|dividir_clk5:divisor5_1|flipflop_t:ff0|q'
+Slack : 0.577
+TNS   : 0.000
+
+Type  : Setup 'dividir_clks:dividir_clks|dividir_clk5:divisor5_7|flipflop_t:ff0|q'
+Slack : 0.623
+TNS   : 0.000
+
+Type  : Setup 'dividir_clks:dividir_clks|flipflop_t:ff_3|q'
+Slack : 0.816
+TNS   : 0.000
+
+Type  : Setup 'dividir_clks:dividir_clks|flipflop_t:ff_8|q'
+Slack : 0.833
+TNS   : 0.000
+
+Type  : Setup 'dividir_clks:dividir_clks|dividir_clk5:divisor5_2|flipflop_t:ff0|q'
+Slack : 0.909
+TNS   : 0.000
+
+Type  : Setup 'contador_3bits:contador3bits|flipflop_t:ff1|q'
+Slack : 1.135
+TNS   : 0.000
+
+Type  : Setup 'dividir_clks:dividir_clks|dividir_clk5:divisor5_3|flipflop_t:ff0|q'
+Slack : 1.531
+TNS   : 0.000
+
+Type  : Setup 'dividir_clks:dividir_clks|flipflop_t:ff_2|q'
+Slack : 1.546
+TNS   : 0.000
+
+Type  : Setup 'dividir_clks:dividir_clks|flipflop_t:ff_5|q'
+Slack : 1.717
+TNS   : 0.000
+
+Type  : Setup 'clk_50MHz'
+Slack : 2.495
+TNS   : 0.000
+
+Type  : Setup 'on_off'
+Slack : 4.277
+TNS   : 0.000
+
+Type  : Hold 'dividir_clks:dividir_clks|dividir_clk5:divisor5_2|flipflop_t:ff0|q'
+Slack : -4.805
+TNS   : -5.768
+
+Type  : Hold 'dividir_clks:dividir_clks|dividir_clk5:divisor5_1|flipflop_t:ff1|q'
+Slack : -4.544
+TNS   : -4.544
+
+Type  : Hold 'dividir_clks:dividir_clks|dividir_clk5:divisor5_4|flipflop_t:ff1|q'
+Slack : -4.532
+TNS   : -4.532
+
+Type  : Hold 'on_off'
+Slack : -4.331
+TNS   : -4.331
+
+Type  : Hold 'dividir_clks:dividir_clks|dividir_clk5:divisor5_3|flipflop_t:ff0|q'
+Slack : -4.184
+TNS   : -5.769
+
+Type  : Hold 'dividir_clks:dividir_clks|dividir_clk5:divisor5_1|flipflop_t:ff0|q'
+Slack : -4.049
+TNS   : -4.680
+
+Type  : Hold 'dividir_clks:dividir_clks|dividir_clk5:divisor5_4|flipflop_t:ff0|q'
+Slack : -4.033
+TNS   : -4.663
+
+Type  : Hold 'dividir_clks:dividir_clks|dividir_clk5:divisor5_3|flipflop_t:ff1|q'
+Slack : -3.997
+TNS   : -3.997
+
+Type  : Hold 'dividir_clks:dividir_clks|dividir_clk5:divisor5_2|flipflop_t:ff1|q'
+Slack : -3.876
+TNS   : -3.876
+
+Type  : Hold 'dividir_clks:dividir_clks|flipflop_t:ff_8|q'
+Slack : -3.570
+TNS   : -4.457
+
+Type  : Hold 'dividir_clks:dividir_clks|dividir_clk5:divisor5_8|flipflop_t:ff0|q'
+Slack : -2.840
+TNS   : -3.341
+
+Type  : Hold 'dividir_clks:dividir_clks|flipflop_t:ff_9|q'
+Slack : -2.834
+TNS   : -2.834
+
+Type  : Hold 'clk_50MHz'
+Slack : -2.549
+TNS   : -2.549
+
+Type  : Hold 'dividir_clks:dividir_clks|dividir_clk5:divisor5_8|flipflop_t:ff1|q'
+Slack : -2.486
+TNS   : -2.486
+
+Type  : Hold 'dividir_clks:dividir_clks|dividir_clk5:divisor5_6|flipflop_t:ff0|q'
+Slack : -2.411
+TNS   : -2.913
+
+Type  : Hold 'dividir_clks:dividir_clks|dividir_clk5:divisor5_5|flipflop_t:ff0|q'
+Slack : -2.247
+TNS   : -2.768
+
+Type  : Hold 'dividir_clks:dividir_clks|dividir_clk5:divisor5_7|flipflop_t:ff1|q'
+Slack : -2.215
+TNS   : -2.215
+
+Type  : Hold 'dividir_clks:dividir_clks|dividir_clk5:divisor5_7|flipflop_t:ff0|q'
+Slack : -2.176
+TNS   : -2.853
+
+Type  : Hold 'dividir_clks:dividir_clks|dividir_clk5:divisor5_6|flipflop_t:ff1|q'
+Slack : -2.062
+TNS   : -2.062
+
+Type  : Hold 'dividir_clks:dividir_clks|flipflop_t:ff_5|q'
+Slack : -1.771
+TNS   : -1.771
+
+Type  : Hold 'dividir_clks:dividir_clks|dividir_clk5:divisor5_5|flipflop_t:ff1|q'
+Slack : -1.694
+TNS   : -1.694
+
+Type  : Hold 'dividir_clks:dividir_clks|flipflop_t:ff_2|q'
+Slack : -1.600
+TNS   : -1.600
+
+Type  : Hold 'contador_3bits:contador3bits|flipflop_t:ff1|q'
+Slack : -1.189
+TNS   : -1.189
+
+Type  : Hold 'dividir_clks:dividir_clks|flipflop_t:ff_3|q'
+Slack : -0.870
+TNS   : -0.870
+
+Type  : Hold 'dividir_clks:dividir_clks|flipflop_t:ff_6|q'
+Slack : -0.604
+TNS   : -0.604
+
+Type  : Hold 'dividir_clks:dividir_clks|flipflop_t:ff_1|q'
+Slack : -0.537
+TNS   : -0.537
+
+Type  : Hold 'dividir_clks:dividir_clks|flipflop_t:ff_7|q'
+Slack : -0.523
+TNS   : -0.523
+
+Type  : Hold 'dividir_clks:dividir_clks|flipflop_t:ff_4|q'
+Slack : -0.511
+TNS   : -0.511
+
+Type  : Hold 'contador_3bits:contador3bits|flipflop_t:ff2|q'
+Slack : 1.695
+TNS   : 0.000
+
+Type  : Recovery 'dividir_clks:dividir_clks|dividir_clk5:divisor5_1|flipflop_t:ff1|q'
+Slack : -6.386
+TNS   : -6.876
+
+Type  : Recovery 'dividir_clks:dividir_clks|dividir_clk5:divisor5_4|flipflop_t:ff1|q'
+Slack : -6.308
+TNS   : -6.308
+
+Type  : Recovery 'dividir_clks:dividir_clks|dividir_clk5:divisor5_1|flipflop_t:ff0|q'
+Slack : -6.003
+TNS   : -6.988
+
+Type  : Recovery 'dividir_clks:dividir_clks|dividir_clk5:divisor5_4|flipflop_t:ff0|q'
+Slack : -5.924
+TNS   : -6.062
+
+Type  : Recovery 'dividir_clks:dividir_clks|dividir_clk5:divisor5_3|flipflop_t:ff1|q'
+Slack : -5.504
+TNS   : -8.078
+
+Type  : Recovery 'dividir_clks:dividir_clks|dividir_clk5:divisor5_2|flipflop_t:ff1|q'
+Slack : -4.764
+TNS   : -7.742
+
+Type  : Recovery 'contador_3bits:contador3bits|flipflop_t:ff2|q'
+Slack : -4.468
+TNS   : -4.468
+
+Type  : Recovery 'dividir_clks:dividir_clks|dividir_clk5:divisor5_3|flipflop_t:ff0|q'
+Slack : -4.422
+TNS   : -6.809
+
+Type  : Recovery 'contador_3bits:contador3bits|flipflop_t:ff1|q'
+Slack : -4.408
+TNS   : -4.408
+
+Type  : Recovery 'clk_50MHz'
+Slack : -4.360
+TNS   : -4.360
+
+Type  : Recovery 'dividir_clks:dividir_clks|dividir_clk5:divisor5_8|flipflop_t:ff1|q'
+Slack : -4.342
+TNS   : -4.342
+
+Type  : Recovery 'dividir_clks:dividir_clks|dividir_clk5:divisor5_8|flipflop_t:ff0|q'
+Slack : -4.300
+TNS   : -4.300
+
+Type  : Recovery 'dividir_clks:dividir_clks|dividir_clk5:divisor5_6|flipflop_t:ff1|q'
+Slack : -4.194
+TNS   : -6.027
+
+Type  : Recovery 'dividir_clks:dividir_clks|dividir_clk5:divisor5_6|flipflop_t:ff0|q'
+Slack : -4.121
+TNS   : -5.605
+
+Type  : Recovery 'dividir_clks:dividir_clks|dividir_clk5:divisor5_5|flipflop_t:ff1|q'
+Slack : -4.008
+TNS   : -6.305
+
+Type  : Recovery 'dividir_clks:dividir_clks|dividir_clk5:divisor5_5|flipflop_t:ff0|q'
+Slack : -3.924
+TNS   : -5.668
+
+Type  : Recovery 'dividir_clks:dividir_clks|dividir_clk5:divisor5_7|flipflop_t:ff0|q'
+Slack : -3.813
+TNS   : -5.775
+
+Type  : Recovery 'dividir_clks:dividir_clks|flipflop_t:ff_9|q'
+Slack : -3.684
+TNS   : -3.684
+
+Type  : Recovery 'dividir_clks:dividir_clks|dividir_clk5:divisor5_2|flipflop_t:ff0|q'
+Slack : -3.655
+TNS   : -5.704
+
+Type  : Recovery 'dividir_clks:dividir_clks|dividir_clk5:divisor5_7|flipflop_t:ff1|q'
+Slack : -3.404
+TNS   : -5.327
+
+Type  : Recovery 'dividir_clks:dividir_clks|flipflop_t:ff_8|q'
+Slack : -2.948
+TNS   : -2.948
+
+Type  : Recovery 'on_off'
+Slack : -2.187
+TNS   : -2.187
+
+Type  : Removal 'dividir_clks:dividir_clks|dividir_clk5:divisor5_4|flipflop_t:ff1|q'
+Slack : -3.161
+TNS   : -3.161
+
+Type  : Removal 'dividir_clks:dividir_clks|dividir_clk5:divisor5_4|flipflop_t:ff0|q'
+Slack : -2.662
+TNS   : -2.662
+
+Type  : Removal 'dividir_clks:dividir_clks|dividir_clk5:divisor5_7|flipflop_t:ff1|q'
+Slack : -1.235
+TNS   : -1.235
+
+Type  : Removal 'dividir_clks:dividir_clks|dividir_clk5:divisor5_5|flipflop_t:ff0|q'
+Slack : -1.229
+TNS   : -1.229
+
+Type  : Removal 'dividir_clks:dividir_clks|dividir_clk5:divisor5_7|flipflop_t:ff0|q'
+Slack : -1.196
+TNS   : -1.196
+
+Type  : Removal 'dividir_clks:dividir_clks|dividir_clk5:divisor5_6|flipflop_t:ff0|q'
+Slack : -0.819
+TNS   : -0.819
+
+Type  : Removal 'on_off'
+Slack : -0.722
+TNS   : -0.722
+
+Type  : Removal 'dividir_clks:dividir_clks|dividir_clk5:divisor5_1|flipflop_t:ff1|q'
+Slack : -0.695
+TNS   : -0.695
+
+Type  : Removal 'dividir_clks:dividir_clks|dividir_clk5:divisor5_5|flipflop_t:ff1|q'
+Slack : -0.676
+TNS   : -0.676
+
+Type  : Removal 'dividir_clks:dividir_clks|dividir_clk5:divisor5_6|flipflop_t:ff1|q'
+Slack : -0.470
+TNS   : -0.470
+
+Type  : Removal 'dividir_clks:dividir_clks|dividir_clk5:divisor5_1|flipflop_t:ff0|q'
+Slack : -0.200
+TNS   : -0.200
+
+Type  : Removal 'dividir_clks:dividir_clks|flipflop_t:ff_8|q'
+Slack : 0.039
+TNS   : 0.000
+
+Type  : Removal 'dividir_clks:dividir_clks|dividir_clk5:divisor5_3|flipflop_t:ff0|q'
+Slack : 0.118
+TNS   : 0.000
+
+Type  : Removal 'dividir_clks:dividir_clks|dividir_clk5:divisor5_3|flipflop_t:ff1|q'
+Slack : 0.305
+TNS   : 0.000
+
+Type  : Removal 'dividir_clks:dividir_clks|dividir_clk5:divisor5_2|flipflop_t:ff0|q'
+Slack : 0.505
+TNS   : 0.000
+
+Type  : Removal 'contador_3bits:contador3bits|flipflop_t:ff1|q'
+Slack : 0.766
+TNS   : 0.000
+
+Type  : Removal 'dividir_clks:dividir_clks|flipflop_t:ff_9|q'
+Slack : 0.775
+TNS   : 0.000
+
+Type  : Removal 'dividir_clks:dividir_clks|dividir_clk5:divisor5_8|flipflop_t:ff0|q'
+Slack : 1.142
+TNS   : 0.000
+
+Type  : Removal 'dividir_clks:dividir_clks|dividir_clk5:divisor5_8|flipflop_t:ff1|q'
+Slack : 1.184
+TNS   : 0.000
+
+Type  : Removal 'dividir_clks:dividir_clks|dividir_clk5:divisor5_2|flipflop_t:ff1|q'
+Slack : 1.434
+TNS   : 0.000
+
+Type  : Removal 'clk_50MHz'
+Slack : 1.992
+TNS   : 0.000
+
+Type  : Removal 'contador_3bits:contador3bits|flipflop_t:ff2|q'
+Slack : 2.270
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clk_50MHz'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'on_off'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'contador_3bits:contador3bits|flipflop_t:ff1|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'contador_3bits:contador3bits|flipflop_t:ff2|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dividir_clks:dividir_clks|dividir_clk5:divisor5_1|flipflop_t:ff0|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dividir_clks:dividir_clks|dividir_clk5:divisor5_1|flipflop_t:ff1|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dividir_clks:dividir_clks|dividir_clk5:divisor5_2|flipflop_t:ff0|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dividir_clks:dividir_clks|dividir_clk5:divisor5_2|flipflop_t:ff1|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dividir_clks:dividir_clks|dividir_clk5:divisor5_3|flipflop_t:ff0|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dividir_clks:dividir_clks|dividir_clk5:divisor5_3|flipflop_t:ff1|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dividir_clks:dividir_clks|dividir_clk5:divisor5_4|flipflop_t:ff0|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dividir_clks:dividir_clks|dividir_clk5:divisor5_4|flipflop_t:ff1|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dividir_clks:dividir_clks|dividir_clk5:divisor5_5|flipflop_t:ff0|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dividir_clks:dividir_clks|dividir_clk5:divisor5_5|flipflop_t:ff1|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dividir_clks:dividir_clks|dividir_clk5:divisor5_6|flipflop_t:ff0|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dividir_clks:dividir_clks|dividir_clk5:divisor5_6|flipflop_t:ff1|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dividir_clks:dividir_clks|dividir_clk5:divisor5_7|flipflop_t:ff0|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dividir_clks:dividir_clks|dividir_clk5:divisor5_7|flipflop_t:ff1|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dividir_clks:dividir_clks|dividir_clk5:divisor5_8|flipflop_t:ff0|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dividir_clks:dividir_clks|dividir_clk5:divisor5_8|flipflop_t:ff1|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dividir_clks:dividir_clks|flipflop_t:ff_1|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dividir_clks:dividir_clks|flipflop_t:ff_2|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dividir_clks:dividir_clks|flipflop_t:ff_3|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dividir_clks:dividir_clks|flipflop_t:ff_4|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dividir_clks:dividir_clks|flipflop_t:ff_5|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dividir_clks:dividir_clks|flipflop_t:ff_6|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dividir_clks:dividir_clks|flipflop_t:ff_7|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dividir_clks:dividir_clks|flipflop_t:ff_8|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dividir_clks:dividir_clks|flipflop_t:ff_9|q'
+Slack : 0.234
+TNS   : 0.000
+
+------------------------------------------------------------

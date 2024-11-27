@@ -1,0 +1,17 @@
+// Fazer um flipflop t com verilog comportamental
+module flipflop_t(clk, q, reset, preset);
+  input clk, reset, preset;
+  output q;
+  initial begin
+    q = 0;
+  end
+  always @(posedge(clk)) begin
+    q = !q;
+    if(reset == 1)begin
+      q = 0;
+    end
+    else if(preset == 1) begin
+      q = 1;
+    end
+  end
+endmodule

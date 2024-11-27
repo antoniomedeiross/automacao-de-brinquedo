@@ -1,0 +1,29 @@
+modulo principal(clk);
+  input clk;
+  reg contagem;
+  reg display;
+  wire clk_display, fio_clk_2s; // fios de ligação
+
+  clock_display clockdisplay(
+    .clk(clk),
+    .cont(clk_display); // Clock de mudança entre os displays
+  );
+
+  dividir_clk_2s clk2s(
+    .clk(clk),
+    .clk_2s(fio_clk_2s) // Fio com o clock de 2 segundos
+  );
+
+  contador_3bits contador(
+    .clk(fio_clk_2s), // O contador recebe o fio com o clk de 2 segundos
+    .cont(contagem)
+  );
+
+  sete_seguimentos segmentos(
+    .x(contagem[0]),
+    .y(contagem[1]),
+    .z(contagem[2]),
+    .display(display)
+  );
+
+emdmodule

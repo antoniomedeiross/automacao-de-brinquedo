@@ -1,0 +1,11 @@
+module contador_3bits(clk, cont);
+  input clk; 
+  output reg [2:0]cont; // Declarando a saida como um registrador de 3 bits
+   
+  always @(posedge(clk)) begin // Sempre que houver uma borda de subida
+    cont = cont + 3'b001; // O contador somara 1 
+    if(cont == 3'b110) begin // Quando a contagem estiver em 110(5), ela reseta 
+      cont = 3'b000;  
+    end
+  end
+endmodule
